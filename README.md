@@ -1,4 +1,4 @@
-# MSOS: Modular Structural Operational Semantics
+# Prolog MSDF Tools
 
 The code in this repository was developed between 2001 and 2004,
 at the Department of Computer Science, Aarhus University, Denmark.
@@ -9,7 +9,8 @@ See the [lecture notes] for explanations and exercises.
 The only changes made in the present version concern the filename
 extension used for Prolog files (which is now `.pro` instead of `.pl`).
 The code should run without errors or warnings using [SWI-Prolog],
-otherwise kindly send a bug report to p.d.mosses@swansea.ac.uk,
+otherwise kindly send a bug report to 
+[p.d.mosses@swansea.ac.uk](mailto:p.d.mosses@swansea.ac.uk),
 including relevant details of how to replicate the problem.
 
 [SWI-Prolog]: https://www.swi-prolog.org
