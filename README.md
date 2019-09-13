@@ -1,5 +1,7 @@
 # Prolog MSDF Tools
 
+See <https://pdmosses.github.io/prolog-msdf-tools> to view in GitHub Pages.
+
 The code in this repository was developed between 2001 and 2004,
 at the Department of Computer Science, Aarhus University, Denmark.
 It was used in connection with undergraduate lectures on
