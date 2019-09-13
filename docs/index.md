@@ -6,7 +6,7 @@ has_children: true
 
 # Prolog MSDF Tools
 
-> User Interface Overview
+> User Guide
 
 > Peter D. Mosses  
 > <https://pdmosses.github.io>  
@@ -23,7 +23,8 @@ See the [lecture notes] for explanations and exercises.
 The only changes made in the present version concern the filename
 extension used for Prolog files (which is now `.pro` instead of `.pl`).
 The code should run without errors or warnings using [SWI-Prolog],
-otherwise kindly send a bug report to p.d.mosses@swansea.ac.uk,
+otherwise kindly send a bug report to 
+[p.d.mosses@swansea.ac.uk](mailto:p.d.mosses@swansea.ac.uk),
 including relevant details of how to replicate the problem.
 
 [MSOS]: https://github.com/pdmosses/prolog-msdf-tools/tree/master/MSOS
