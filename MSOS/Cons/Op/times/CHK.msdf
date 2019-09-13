@@ -1,0 +1,5 @@
+Passable ::= tup(ValueType,ValueType)
+
+ValueType ::= int
+
+  (*):Op ===> func(tup(int,int),int).

@@ -1,0 +1,5 @@
+CellType ::= ref(StorableType)
+
+ VAR ===> ref(VT), E ===> VT
+-----------------------------
+assign-seq(VAR,E):Exp ===> VT

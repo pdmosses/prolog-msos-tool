@@ -1,0 +1,8 @@
+cml
+let chan c
+in 
+(spawn (fn()=>send(c,1));
+ spawn (fn()=>receive(c)))
+end
+
+

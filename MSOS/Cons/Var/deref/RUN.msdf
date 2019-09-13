@@ -1,0 +1,7 @@
+Value ::= ref(Cell)
+
+           E --{...}-> E'
+--------------------------------
+deref(E):Var --{...}-> deref(E')
+
+deref(ref(CL)):Var ---> CL

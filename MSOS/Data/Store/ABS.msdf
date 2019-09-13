@@ -1,0 +1,7 @@
+S: Store = (Cell,Storable)Map
+
+/*
+dom(S) = CLS, size(CLS) = N, N+1 = N1
+-------------------------------------
+        new-cell(S) = cell(N1)
+*/

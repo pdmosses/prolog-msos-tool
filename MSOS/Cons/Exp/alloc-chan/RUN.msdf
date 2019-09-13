@@ -1,0 +1,7 @@
+Label = {chans,chans':Channels*,...}
+
+Value ::= Channel
+
+    new-chan(CHANS) = CHAN,  CHANS + {CHAN} = CHANS'
+-------------------------------------------------------
+alloc-chan:Exp --{chans=CHANS,chans'=CHANS',---}-> CHAN

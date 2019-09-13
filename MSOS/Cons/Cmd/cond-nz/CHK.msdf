@@ -1,0 +1,5 @@
+ValueType ::= int
+
+  E ===> int, C ===> void
+--------------------------
+cond-nz(E,C):Cmd ===> void

@@ -1,0 +1,4 @@
+(if false then false else true,
+ if true then true else false,
+ if true andalso false then false else true,
+ if false orelse false then false else true)

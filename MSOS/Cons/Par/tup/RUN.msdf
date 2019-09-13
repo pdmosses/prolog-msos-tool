@@ -1,0 +1,11 @@
+see Dec/app, Dec/simult
+
+PAR+ = (PAR,PAR*),  BV+ = (BV,BV*)
+----------------------------------
+app(tup(PAR+),tup(BV+)):Dec --->
+   simult(app(PAR,BV),
+          app(tup(PAR*),tup(BV*)))
+
+         void = ENV
+-----------------------------
+app(tup(),tup()):Dec ---> ENV

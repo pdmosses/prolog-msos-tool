@@ -1,0 +1,7 @@
+Label = {event':Event*,...}
+
+           SYS --{event'=(),...}-> SYS'
+----------------------------------------------
+quiet(SYS):Sys --{event'=(),...}-> quiet(SYS')
+
+quiet(skip):Sys ---> skip

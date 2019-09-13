@@ -1,0 +1,9 @@
+Value ::= Boolean
+
+                E --{...}-> E'
+------------------------------------------
+cond(E,C1,C2):Cmd --{...}-> cond(E',C1,C2)
+
+cond(true,C1,C2):Cmd ---> C1
+
+cond(false,C1,C2):Cmd ---> C2

@@ -1,0 +1,9 @@
+Value ::= Boolean
+
+                E --{...}-> E'
+------------------------------------------
+cond(E,E1,E2):Exp --{...}-> cond(E',E1,E2)
+
+cond(true,E1,E2):Exp ---> E1
+
+cond(false,E1,E2):Exp ---> E2

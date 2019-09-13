@@ -1,0 +1,2 @@
+declare('PVT':'PassableType').
+

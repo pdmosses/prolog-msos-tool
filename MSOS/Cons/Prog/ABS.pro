@@ -1,0 +1,2 @@
+declare('P':'Prog').
+

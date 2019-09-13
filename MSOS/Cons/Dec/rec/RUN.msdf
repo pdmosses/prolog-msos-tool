@@ -1,0 +1,14 @@
+Dec ::= reclose(Dec,Dec)
+
+see Dec/bind, Dec/simult, Dec/simult-seq, Exp/close, Abs/closure
+
+rec(D):Dec ---> reclose(rec(D),D)
+
+reclose(rec(D),bind(I,close(ABS))):Dec --->
+               bind(I,close(closure(rec(D),ABS)))
+
+reclose(rec(D),simult-seq(D1,D2)):Dec --->
+               simult-seq(reclose(rec(D),D1),reclose(rec(D),D2))
+
+reclose(rec(D),simult(D1,D2)):Dec --->
+               simult(reclose(rec(D),D1),reclose(rec(D),D2))

@@ -1,0 +1,5 @@
+see Abs/closure
+
+Label = {env:Env,...}
+
+close(ABS):Exp --{env=ENV,---}-> closure(ENV,ABS)

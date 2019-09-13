@@ -1,0 +1,11 @@
+                 E --{...}-> E'
+--------------------------------------------
+app-seq(E,ARG):Exp --{...}-> app-seq(E',ARG)
+
+                ARG --{...}-> ARG'
+--------------------------------------------
+app-seq(V,ARG):Exp --{...}-> app-seq(V,ARG')
+
+app-seq(V,PV):Exp ---> app(V,PV)
+
+see Exp/app

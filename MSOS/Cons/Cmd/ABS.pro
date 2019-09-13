@@ -1,0 +1,2 @@
+declare('C':'Cmd').
+

@@ -1,0 +1,5 @@
+FuncType ::= func(PassableType,ValueType)
+
+O ===> func(PVT,VT), ARG ===> PVT
+---------------------------------
+   app(O,ARG):Exp ===> VT

@@ -1,0 +1,13 @@
+Label = {event':Event*,...}
+
+Event ::= sending(Channel,Value) | receiving(Channel,Value)
+
+SYS1 --{event'=  sending(CHAN,V),---}-> SYS1',
+SYS2 --{event'=receiving(CHAN,V),---}-> SYS2'
+---------------------------------------------------------
+conc(SYS1,SYS2):Sys --{event'=(),---}-> conc(SYS1',SYS2')
+
+SYS2 --{event'=  sending(CHAN,V),---}-> SYS2',
+SYS1 --{event'=receiving(CHAN,V),---}-> SYS1'
+---------------------------------------------------------
+conc(SYS1,SYS2):Sys --{event'=(),---}-> conc(SYS1',SYS2')

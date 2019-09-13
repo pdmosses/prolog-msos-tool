@@ -1,0 +1,2 @@
+declare('SVT':'StorableType').
+

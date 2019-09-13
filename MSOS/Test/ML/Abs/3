@@ -1,0 +1,3 @@
+let fun f y = y andalso f(false)
+in  f true
+end

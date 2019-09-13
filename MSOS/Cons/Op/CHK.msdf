@@ -1,0 +1,5 @@
+State ::= Op
+
+Final ::= FuncType
+
+FuncType ::= func(PassableType,ValueType)

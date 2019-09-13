@@ -1,0 +1,5 @@
+PassableType ::= tup(ValueType,ValueType)
+
+      E1 ===> VT1, E2 ===> VT2
+------------------------------------
+tup-seq(E1,E2):Arg ===> tup(VT1,VT2)

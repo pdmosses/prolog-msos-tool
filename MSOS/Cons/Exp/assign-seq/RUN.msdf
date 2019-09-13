@@ -1,0 +1,13 @@
+Label = {store,store':Store,...}
+
+                  VAR --{...}-> VAR'
+--------------------------------------------------
+assign-seq(VAR,E):Exp --{...}-> assign-seq(VAR',E)
+
+                   E --{...}-> E'
+------------------------------------------------
+assign-seq(CL,E):Exp --{...}-> assign-seq(CL,E')
+
+       def lookup(CL,S),  (CL|->SV)/S = S'
+----------------------------------------------------
+assign-seq(CL,SV):Exp --{store=S,store'=S',---}-> SV

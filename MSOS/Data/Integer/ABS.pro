@@ -1,0 +1,2 @@
+declare('N':'Integer').
+

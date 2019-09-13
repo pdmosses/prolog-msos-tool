@@ -1,0 +1,5 @@
+PassableType ::= bool
+
+ValueType ::= int
+
+(ord):Op ===> func(bool,int).

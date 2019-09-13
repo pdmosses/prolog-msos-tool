@@ -1,0 +1,58 @@
+Modular SOS
+
+	     Peter D. Mosses <p.d.mosses@swansea.ac.uk>
+	     Dept of Computer Science
+	     Swansea University, UK
+
+The enclosing directory, named MSOS, is the root of this project,
+and contains further documentation.
+
+
+SUBDIRECTORIES OF MSOS:
+
+Cons:	sort/aspect.notation, 
+	sort/construct/aspect.notation
+
+	Reusable modules specifying the abstract syntax and semantics
+	of various basic programming constructs.
+
+
+Data:	sort/aspect.notation, 
+	sort/construct/aspect.notation
+
+	Reusable modules specifying auxiliary datatypes.
+
+
+Lang:	language/aspect.notation,
+	language/version/aspect.notation
+
+	Modules specifying the concrete syntaxes of various languages, 
+	and their translations to abstract basic constructs.
+
+	Lex/LEX.pro and MSDF/SYN.pro are loaded by Tool/load.pro
+
+
+Test:	Various test files.
+
+
+Tool:	Various Prolog files. 
+
+    See Tool/ABOUT.txt for a brief user guide.
+
+DIRECTORY NAMES:
+
+language:	 Lex, MSDF, bc, ...
+
+sort:		 Act, Cmd, Dec, Exp, Type, Id, Var, 
+		 Op, Proc, Func, Param, Arg, Gen, Abs-X, Alt-X, ...
+
+construct:	 and-then, ..., seq, ...
+
+aspect:		 ABOUT - informal
+		 LEX - lexical syntax
+		 CFG - concrete syntax
+		 ABS - abstract syntax
+		 SYN - mapping concrete to abstract syntax
+		 CHK - checking: static semantics
+		 RUN - running: dynamic semantics
+		 APP - applications of data operations

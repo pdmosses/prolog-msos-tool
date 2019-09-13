@@ -1,0 +1,9 @@
+Label = {starting':Abs*,...}
+
+Value ::= Abs
+
+           E --{...}-> E'
+--------------------------------
+start(E):Cmd --{...}-> start(E')
+
+start(ABS):Cmd --{starting'=ABS,---}-> skip

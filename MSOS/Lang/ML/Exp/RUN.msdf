@@ -1,0 +1,37 @@
+see	Prog, Prog/Exp
+
+see	Exp, Exp/Boolean, Exp/Integer, Exp/Character, Exp/String,
+	Exp/Id, Exp/cond, Exp/app-Op, Exp/app-Id, 
+	Exp/tup, Exp/tup-seq
+
+see	Arg, Arg/Exp
+
+see	Op
+
+see	Id
+
+Value ::= (Value)List
+
+Bindable ::= Value | Op
+
+Op ::= cons | = | abs | + | - | * | div | mod | < | > | =< | >= | nth
+
+Passable ::= Value
+
+init-env = 
+       {id(true)  |-> true,
+	id(false) |-> false,
+	id(nil)   |-> [ ],
+	id('::')  |-> cons,
+	id('=')   |-> (=),
+	id('~')   |-> (-),
+	id(abs)   |-> abs,
+	id('+')   |-> (+),
+	id('-')   |-> (-),
+	id('*')   |-> (*),
+	id(div)   |-> div,
+	id(mod)   |-> mod,
+	id('<')   |-> (<),
+	id('>')   |-> (>),
+	id('<=')  |-> (=<),
+	id('>=')  |-> (>=)}

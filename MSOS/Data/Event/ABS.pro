@@ -1,0 +1,2 @@
+declare('EVT':'Event').
+

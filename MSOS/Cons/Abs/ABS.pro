@@ -1,0 +1,2 @@
+declare('ABS':'Abs').
+

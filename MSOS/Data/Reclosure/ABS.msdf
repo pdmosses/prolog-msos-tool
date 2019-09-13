@@ -1,0 +1,9 @@
+Reclosure ::= reclosure(Env,Env,Closure)
+
+/*
+            ENV2 = {I |-> CLO)} + ENV3,
+         reclose(ENV,ENV',ENV3) = ENV3',
+{I |-> reclosure(ENV,ENV1,CLO)} + ENV3' = ENV2'
+--------------------------------------------------
+         reclose(ENV,ENV1,ENV2) = ENV2'
+*/

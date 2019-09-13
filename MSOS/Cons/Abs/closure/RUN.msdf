@@ -1,0 +1,3 @@
+see Dec/local, Abs
+
+app(closure(D,ABS),PV):Exp ---> local(D,app(ABS,PV))

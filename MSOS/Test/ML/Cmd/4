@@ -1,0 +1,5 @@
+let val a = ref 3
+in  (while !a<40 do a:=(!a+3); !a)
+end
+
+(* This may take a few minutes... *)

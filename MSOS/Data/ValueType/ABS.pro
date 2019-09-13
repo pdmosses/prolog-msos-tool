@@ -1,0 +1,2 @@
+declare('VT':'ValueType').
+

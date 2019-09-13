@@ -1,0 +1,9 @@
+Bindable ::= CellType
+
+CellType ::= ref(StorableType)
+
+Label = {env:Env,...}
+
+     lookup(I,ENV) = ref(SVT)
+--------------------------------
+I:Var =={env=ENV,---}=> ref(SVT)

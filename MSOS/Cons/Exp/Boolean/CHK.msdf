@@ -1,0 +1,3 @@
+ValueType ::= bool
+
+B:Exp ===> bool

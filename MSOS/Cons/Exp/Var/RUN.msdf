@@ -1,0 +1,9 @@
+Label = {store,store':Store,...}
+
+    VAR --{...}-> VAR'
+----------------------
+VAR:Exp --{...}-> VAR'
+
+        lookup(CL,S) = V
+-----------------------------------
+CL:Exp --{store=S,store'=S,---}-> V

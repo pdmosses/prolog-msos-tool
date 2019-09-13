@@ -1,0 +1,3 @@
+see Dec/local, Dec/app
+
+app(abs(PAR,E),PV):Exp ---> local(app(PAR,PV),E)

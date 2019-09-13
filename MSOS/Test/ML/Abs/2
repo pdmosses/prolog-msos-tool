@@ -1,0 +1,5 @@
+let val x = 2
+in  let fun f y = x * y
+    in  f 3
+    end 
+end;

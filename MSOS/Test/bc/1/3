@@ -1,0 +1,20 @@
+
+
+while(a<1)2+3
+
+while (a<=1) 2 - 3
+
+while(a>1){2*3}
+
+while(a>=1){ 2/3 }
+
+while(a==1){
+2%3
+}
+
+while (a!=1) {
+
+23
+}
+
+a=3; while(a<40){a=(a+3)}; a

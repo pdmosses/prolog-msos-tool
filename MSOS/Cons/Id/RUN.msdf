@@ -1,0 +1,17 @@
+State ::= Id
+
+Final ::= Bindable
+
+Id ::= Bindable
+
+Label = {env:Env,...}
+
+   lookup(I,ENV) = BV
+-------------------------
+I:Id --{env=ENV,---}-> BV
+
+  not def lookup(I,ENV),
+     init-env = ENV',
+  lookup(I, ENV') = BV
+-------------------------
+I:Id --{env=ENV,---}-> BV

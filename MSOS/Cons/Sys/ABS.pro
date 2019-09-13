@@ -1,0 +1,2 @@
+declare('SYS':'Sys').
+

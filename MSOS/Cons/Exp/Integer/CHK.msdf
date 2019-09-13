@@ -1,0 +1,3 @@
+ValueType ::= int
+
+N:Exp ===> int

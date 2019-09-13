@@ -1,0 +1,2 @@
+declare('O':'Op').
+

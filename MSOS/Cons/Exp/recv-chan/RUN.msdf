@@ -1,0 +1,11 @@
+Label = {event':Event*,...}
+
+Event ::= receiving(Channel,Value)
+
+Value ::= Channel
+
+               E --{...}-> E'
+----------------------------------------
+recv-chan(E):Exp --{...}-> recv-chan(E')
+
+recv-chan(CHAN):Exp --{event'=receiving(CHAN,V),---}-> V

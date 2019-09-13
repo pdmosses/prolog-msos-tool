@@ -1,0 +1,14 @@
+C:   Cmd ::= skip | seq(Cmd,Cmd) | cond-nz(Exp,Cmd)
+           | while-nz(Exp,Cmd) | effect(Exp) | print(Exp)
+
+E:   Exp ::= Boolean | Integer | Var 
+           | assign-seq(Var,Exp) | app(Op,Arg)
+
+VAR: Var ::= Id
+
+O:   Op  ::=  +  |  -  |  *  | div | mod | ord
+           |  <  |  =< |  >  |  >= |  =  |  \=
+
+ARG: Arg ::= Exp | tup-seq(Exp,Exp)
+
+I:   Id  ::= id(Atom)

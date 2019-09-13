@@ -1,0 +1,3 @@
+see Dec/app
+
+app(bind(I),BV):Dec ---> {I |-> BV}

@@ -1,0 +1,92 @@
+State ::= Cmd  | Exp | Var | Op | Arg
+
+Final ::= void | ValueType | CellType | FuncType | PassableType
+
+VT : ValueType    ::= bool | int
+
+CLT: CellType     ::= ref(StorableType)
+
+FNT: FuncType     ::= func(PassableType,ValueType)
+
+PVT: PassableType ::= ValueType | tup(ValueType,ValueType)
+
+BV : Bindable     ::= CellType
+
+SVT: StorableType ::= int
+
+/* Labels: */
+
+Label = {env:Env, ...}
+
+/* Command typechecking rules: */
+
+skip:Cmd ===> void
+
+C1 ===> void, C2 ===> void
+--------------------------
+ seq(C1,C2):Cmd ===> void
+
+  E ===> int, C ===> void
+--------------------------
+cond-nz(E,C):Cmd ===> void
+
+  E ===> int, C ===> void
+---------------------------
+while-nz(E,C):Cmd ===> void
+
+       E ===> VT
+-----------------------
+effect(E):Cmd ===> void
+
+       E ===> VT
+----------------------
+print(E):Cmd ===> void
+
+/* Expression typechecking rules: */
+
+B:Exp ===> bool
+
+N:Exp ===> int
+
+VAR ===> ref(VT)
+----------------
+VAR:Exp ===> VT
+
+ VAR ===> ref(VT), E ===> VT
+-----------------------------
+assign-seq(VAR,E):Exp ===> VT
+
+O ===> func(PVT,VT), ARG ===> PVT
+---------------------------------
+     app(O,ARG):Exp ===> VT
+
+/* Operation typechecking rules: */
+
+  (+):Op ===> func(tup(int,int),int).
+  (-):Op ===> func(tup(int,int),int).
+  (*):Op ===> func(tup(int,int),int).
+(div):Op ===> func(tup(int,int),int).
+(mod):Op ===> func(tup(int,int),int).
+(ord):Op ===> func(bool,int).
+  (<):Op ===> func(tup(int,int),bool).
+ (=<):Op ===> func(tup(int,int),bool).
+  (>):Op ===> func(tup(int,int),bool).
+ (>=):Op ===> func(tup(int,int),bool).
+  (=):Op ===> func(tup(int,int),bool).
+ (\=):Op ===> func(tup(int,int),bool).
+
+/* Variable typechecking rules: */
+
+    lookup(I,ENV) = ref(SVT)
+--------------------------------
+I:Var =={env=ENV,---}=> ref(SVT)
+
+/* Argument typechecking rules: */
+
+  E ===> VT
+-------------
+E:Arg ===> VT
+
+      E1 ===> VT1, E2 ===> VT2
+------------------------------------
+tup-seq(E1,E2):Arg ===> tup(VT1,VT2)

@@ -1,0 +1,2 @@
+declare('CH':'Character').
+

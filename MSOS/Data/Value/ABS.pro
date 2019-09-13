@@ -1,0 +1,2 @@
+declare('V':'Value').
+

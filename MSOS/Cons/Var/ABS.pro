@@ -1,0 +1,2 @@
+declare('VAR':'Var').
+

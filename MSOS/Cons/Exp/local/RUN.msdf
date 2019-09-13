@@ -1,0 +1,11 @@
+Label = {env:Env,...}
+
+             D --{...}-> D'
+------------------------------------
+local(D,E):Exp --{...}-> local(D',E)
+
+   (ENV/ENV0) = ENV',  E --{env=ENV',...}-> E'
+-------------------------------------------------
+local(ENV,E):Exp --{env=ENV0,...}-> local(ENV,E')
+
+local(ENV,V):Exp ---> V

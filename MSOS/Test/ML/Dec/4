@@ -1,0 +1,5 @@
+let local val a = 1 
+    in    val a = a+1 
+    end
+in  a=2
+end;

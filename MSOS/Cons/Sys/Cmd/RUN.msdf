@@ -1,0 +1,18 @@
+Final ::= skip
+
+Sys ::= skip
+
+Label = {starting':Abs*,...}
+
+    C --{starting'=ABS,...}-> C'
+--------------------------------
+C:Sys --{starting'=(),...}->
+    conc(C',effect(app(ABS,tup())))
+
+    C --{starting'=(),...}-> C'
+-------------------------------
+C:Sys --{starting'=(),...}-> C'
+
+conc(skip,SYS):Sys ---> SYS
+
+conc(SYS,skip):Sys ---> SYS

@@ -1,0 +1,2 @@
+declare('BV':'Bindable').
+

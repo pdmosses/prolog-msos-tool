@@ -1,0 +1,15 @@
+Label = {event':Event*,...}
+
+Event ::= sending(Channel,Value)
+
+Value ::= Channel
+
+                  E1 --{...}-> E1'
+------------------------------------------------
+send-chan(E1,E2):Cmd --{...}-> send-chan(E1',E2)
+
+                  E2 --{...}-> E2'
+------------------------------------------------
+send-chan(E1,E2):Cmd --{...}-> send-chan(E1,E2')
+
+send-chan(CHAN,V):Cmd --{event'=sending(CHAN,V),---}-> skip

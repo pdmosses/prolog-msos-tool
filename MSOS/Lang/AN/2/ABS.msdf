@@ -1,0 +1,10 @@
+Prog ::= Term
+
+Term ::= inf(Term, Id, Term)
+       | pre(Term, Term)
+       | group(Term+)
+       | Id
+
+Id ::= Atom
+
+

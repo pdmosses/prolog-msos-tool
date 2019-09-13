@@ -1,0 +1,4 @@
+see Cmd/cond, Cmd/seq
+
+while(E,C):Cmd ---> 
+ cond(E,seq(C,while(E,C)),skip)

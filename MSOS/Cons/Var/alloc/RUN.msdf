@@ -1,0 +1,9 @@
+Label = {store,store':Store,...}
+
+	   E --{...}-> E'
+--------------------------------
+alloc(E):Var --{...}-> alloc(E')
+
+    new-cell(S) = CL, {CL |-> SV}/S = S'
+--------------------------------------------
+alloc(SV):Var --{store=S,store'=S',---}-> CL

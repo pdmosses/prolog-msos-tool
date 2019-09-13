@@ -1,0 +1,4 @@
+see Cmd/cond-nz, Cmd/seq
+
+while-nz(E,C):Cmd ---> 
+ cond-nz(E,seq(C,while-nz(E,C)))

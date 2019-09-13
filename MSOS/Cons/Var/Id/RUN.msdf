@@ -1,0 +1,7 @@
+Bindable ::= Cell
+
+Label = {env:Env,...}
+
+    lookup(I,ENV) = CL
+--------------------------
+I:Var --{env=ENV,---}-> CL

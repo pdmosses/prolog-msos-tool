@@ -1,0 +1,3 @@
+let fun f x = f x
+in  f 42
+end

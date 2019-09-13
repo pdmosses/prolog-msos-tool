@@ -1,0 +1,7 @@
+let local val a = 1 
+    in    val b = a+1 
+    end
+in  (a=1) andalso false
+end;
+
+(* should get stuck! *)

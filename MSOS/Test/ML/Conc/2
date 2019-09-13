@@ -1,0 +1,4 @@
+cml
+(spawn (fn()=>1);
+ spawn (fn()=>2))
+

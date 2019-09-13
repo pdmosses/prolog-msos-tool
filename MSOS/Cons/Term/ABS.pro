@@ -1,0 +1,2 @@
+declare('_':'Term').
+

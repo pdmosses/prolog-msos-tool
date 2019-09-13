@@ -1,0 +1,5 @@
+State ::= Dec
+
+Final ::= Env
+
+Dec ::= Env

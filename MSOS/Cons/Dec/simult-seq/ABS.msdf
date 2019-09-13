@@ -1,0 +1,1 @@
+Dec ::= simult-seq(Dec,Dec)

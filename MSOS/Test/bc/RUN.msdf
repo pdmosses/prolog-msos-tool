@@ -1,0 +1,120 @@
+State ::= Cmd  | Exp | Var | Arg
+
+Final ::= skip | Value | Cell | Passable
+
+Var   ::= Cell
+
+Arg   ::= Passable
+
+/* Data: */
+
+V :  Value    ::= Boolean | Integer
+
+BV : Bindable ::= Cell
+
+PV : Passable ::= Value | tup(Value,Value)
+
+SV : Storable ::= Integer
+
+/* Labels: */
+
+Label = {env:Env,store,store':Store,out':Value*,...}
+
+
+/* Command transition rules: */
+
+            C1 --{...}-> C1'
+------------------------------------
+seq(C1,C2):Cmd --{...}-> seq(C1',C2)
+
+seq(skip,C2):Cmd ---> C2
+
+
+               E --{...}-> E'
+----------------------------------------
+cond-nz(E,C):Cmd --{...}-> cond-nz(E',C)
+
+cond-nz(0,C):Cmd ---> skip
+
+        N \= 0
+-----------------------
+cond-nz(N,C):Cmd ---> C
+
+
+while-nz(E,C):Cmd ---> 
+ cond-nz(E,seq(C,while-nz(E,C)))
+
+
+            E --{...}-> E'
+----------------------------------
+effect(E):Cmd --{...}-> effect(E')
+
+effect(V):Cmd ---> skip
+
+
+           E --{...}-> E'
+--------------------------------
+print(E):Cmd --{...}-> print(E')
+
+print(V):Cmd --{out'=V,---}-> skip
+
+
+/* Expression transition rules: */
+
+    VAR --{...}-> VAR'
+----------------------
+VAR:Exp --{...}-> VAR'
+
+        lookup(CL,S) = V
+-----------------------------------
+CL:Exp --{store=S,store'=S,---}-> V
+
+
+                  VAR --{...}-> VAR'
+--------------------------------------------------
+assign-seq(VAR,E):Exp --{...}-> assign-seq(VAR',E)
+
+                   E --{...}-> E'
+------------------------------------------------
+assign-seq(CL,E):Exp --{...}-> assign-seq(CL,E')
+
+                 (CL|->SV)/S = S'
+----------------------------------------------------
+assign-seq(CL,SV):Exp --{store=S,store'=S',---}-> SV
+
+
+           ARG --{...}-> ARG'
+------------------------------------
+app(O,ARG):Exp --{...}-> app(O,ARG')
+
+        O(V1,V2) = V'
+-----------------------------
+app(O,tup(V1,V2)):Exp ---> V'
+
+      O(V) = V'
+--------------------
+app(O,V):Exp ---> V'
+
+
+/* Variable transition rules: */
+
+    lookup(I,ENV) = CL
+--------------------------
+I:Var --{env=ENV,---}-> CL
+
+
+/* Argument transition rules: */
+
+    E --{...}-> E'
+------------------
+E:Arg --{...}-> E'
+
+                E1 --{...}-> E1'
+--------------------------------------------
+tup-seq(E1,E2):Arg --{...}-> tup-seq(E1',E2)
+
+                E2 --{...}-> E2'
+--------------------------------------------
+tup-seq(V1,E2):Arg --{...}-> tup-seq(V1,E2')
+
+tup-seq(V1,V2):Arg ---> tup(V1,V2)

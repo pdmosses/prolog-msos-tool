@@ -1,0 +1,3 @@
+State ::= Var
+
+Final ::= CellType

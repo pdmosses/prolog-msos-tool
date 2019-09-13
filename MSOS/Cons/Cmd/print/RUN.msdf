@@ -1,0 +1,7 @@
+Label = {out':Value*,...}
+
+           E --{...}-> E'
+--------------------------------
+print(E):Cmd --{...}-> print(E')
+
+print(V):Cmd --{out'=V,---}-> skip

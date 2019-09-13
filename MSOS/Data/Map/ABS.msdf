@@ -1,0 +1,15 @@
+(X,Y)Map
+
+/*
+map :	(@>(X, Y))* -> (X,Y)Map
+
+lookup :(X, (X,Y)Map) -> Y
+
+dom :	(X,Y)Map -> (X)Set
+
+ran :	(X,Y)Map -> (Y)Set
+
++ :	((X,Y)Map, (X,Y)Map) -> (X,Y)Map
+
+/ :	((X,Y)Map, (X,Y)Map) -> (X,Y)Map
+*/
