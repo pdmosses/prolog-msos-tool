@@ -7,13 +7,9 @@
 
    USAGE: (see also ABOUT.txt)
 
-   cd $HOME/Projects/SVN/MSOS
-   swipl
+   cd .../MSOS
+   swipl -l Tool/load.pro 
    
-   cd('$HOME/Projects/SVN/MSOS').
-
-   ['Tool/load.pro'].
-
    parse('Test/bc', 'Test/bc/4.bc').
    check('Test/bc', 'Test/bc/4.bc').
    run('Test/bc', 'Test/bc/4.bc').
