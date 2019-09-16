@@ -1,6 +1,6 @@
-# Prolog MSDF Tools
+# Prolog MSOS Tool
 
-See <https://pdmosses.github.io/prolog-msdf-tools> to view in GitHub Pages.
+See <https://pdmosses.github.io/prolog-msos-tool> to view in GitHub Pages.
 
 The code in this repository was developed between 2001 and 2004,
 at the Department of Computer Science, Aarhus University, Denmark.
@@ -25,8 +25,8 @@ including relevant details of how to replicate the problem.
   a framework for component-based specification of programming languages using
   MSOS.
 
-- [Maude MSOS Tools](https://github.com/fcbr/mmt):
-  an execution environment for that brings the power of analysis available in
+- [Maude MSOS Tool](https://github.com/fcbr/mmt):
+  an execution environment that brings the power of analysis available in
   the Maude system to MSOS specifications.
 
 [SWI-Prolog]: https://www.swi-prolog.org

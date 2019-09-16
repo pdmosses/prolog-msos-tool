@@ -9,11 +9,11 @@ parent: Prolog MSDF Tools
 
 The original MSOS code is available for browsing at:
 
-* <https://github.com/pdmosses/prolog-msdf-tools/tree/master/MSOS>
+* <https://github.com/pdmosses/prolog-msos-tool/tree/master/MSOS>
 
 and for downloading as a zip archive:
 
-* <https://github.com/pdmosses/prolog-msdf-tools/blob/master/MSOS.zip>
+* <https://github.com/pdmosses/prolog-msos-tool/blob/master/MSOS.zip>
 
 To unpack the archive and create or update the MSOS directory:
 ```

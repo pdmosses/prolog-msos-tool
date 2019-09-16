@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Prolog MSDF Tools
+title: Prolog MSOS Tool
 has_children: true
 ---
 
-# Prolog MSDF Tools
+# Prolog MSOS Tool
 
 > User Guide
 
@@ -38,13 +38,13 @@ including relevant details of how to replicate the problem.
   MSOS.
 
 - [Maude MSOS Tool](https://github.com/fcbr/mmt):
-  an execution environment for that brings the power of analysis available in
+  an execution environment that brings the power of analysis available in
   the Maude system to MSOS specifications.
 
-[MSOS]: https://github.com/pdmosses/prolog-msdf-tools/tree/master/MSOS
+[MSOS]: https://github.com/pdmosses/prolog-msos-tool/tree/master/MSOS
   "Folder with MSDF and Prolog code"
   
-[Lecture notes]: https://github.com/pdmosses/prolog-msdf-tools/blob/master/Notes.pdf
+[Lecture notes]: https://github.com/pdmosses/prolog-msos-tool/blob/master/Notes.pdf
   "PDF of lecture notes"
 
 [SWI-Prolog]: https://www.swi-prolog.org

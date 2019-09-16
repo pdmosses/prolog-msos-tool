@@ -1,11 +1,11 @@
 remote_theme: pmarsceill/just-the-docs
 title: Prolog MSDF Tools
 description: MSDF is a meta-language for modular specification of programming languages
-repository: "pdmosses/prolog-msdf-tools"
+repository: "pdmosses/prolog-msos-tool"
 # Aux links for the upper right navigation
 aux_links:
-  "prolog-msdf-tools on GitHub":
-    - "//github.com/pdmosses/prolog-msdf-tools"
+  "prolog-msos-tool on GitHub":
+    - "//github.com/pdmosses/prolog-msos-tool"
 plugins:
     - jekyll-seo-tag
 compress_html:

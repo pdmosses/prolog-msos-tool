@@ -17,7 +17,7 @@ programs in the simple illustrative languages described in:
 
 > _Fundamental Concepts and Formal Semantics of Programming Languages_  
 > Peter D. Mosses, 2004 
-> ([PDF](https://github.com/pdmosses/prolog-msdf-tools/blob/master/Notes.pdf))
+> ([PDF](https://github.com/pdmosses/prolog-msos-tool/blob/master/Notes.pdf))
 
 * bc/1: a simple subset of the imperative language bc (see Chapter 1).
 
