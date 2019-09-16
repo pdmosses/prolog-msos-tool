@@ -2,7 +2,7 @@
 layout: default
 title: Downloading
 nav_order: 1
-parent: Prolog MSDF Tools
+parent: Prolog MSOS Tool
 ---
 
 # Downloading

@@ -2,7 +2,7 @@
 layout: default
 title: Using generated files
 nav_order: 3
-parent: Prolog MSDF Tools
+parent: Prolog MSOS Tool
 ---
 
 # Using generated files

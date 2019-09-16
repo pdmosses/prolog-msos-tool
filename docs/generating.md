@@ -2,7 +2,7 @@
 layout: default
 title: Generating files
 nav_order: 4
-parent: Prolog MSDF Tools
+parent: Prolog MSOS Tool
 ---
 
 # Generating files

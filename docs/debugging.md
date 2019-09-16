@@ -2,7 +2,7 @@
 layout: default
 title: Debugging
 nav_order: 5
-parent: Prolog MSDF Tools
+parent: Prolog MSOS Tool
 ---
 
 # Debugging

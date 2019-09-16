@@ -1,5 +1,5 @@
 remote_theme: pmarsceill/just-the-docs
-title: Prolog MSDF Tools
+title: Prolog MSOS Tool
 description: MSDF is a meta-language for modular specification of programming languages
 repository: "pdmosses/prolog-msos-tool"
 # Aux links for the upper right navigation

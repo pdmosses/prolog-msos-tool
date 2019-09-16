@@ -2,7 +2,7 @@
 layout: default
 title: Loading Prolog tools
 nav_order: 2
-parent: Prolog MSDF Tools
+parent: Prolog MSOS Tool
 ---
 
 # Loading Prolog tools
